@@ -5,7 +5,10 @@ import { Button } from "react-native";
 import About from "./about";
 export default function Home({ navigation }) {
   const changeScreen = () => {
-    navigation.navigate("About Screen");
+    navigation.navigate("About Screen", {
+      ItemName: "Item form home screen",
+      ItemId: 1,
+    });
   };
   return (
     <View style={globalStyle.container}>
